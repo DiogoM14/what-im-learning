@@ -1,4 +1,6 @@
 import Head from 'next/head'
+import { CarForm } from '../lib/CarForm'
+import { SearchForm } from '../lib/SearchForm'
 
 export default function Home() {
   return (
@@ -9,7 +11,9 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <h1>Teste</h1>
+      <h1>Create a car</h1>
+      <CarForm />
+      <SearchForm />
     </div>
   )
 }
